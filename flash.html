@@ -1,0 +1,13 @@
+<html>
+    <head></head>
+    <body>
+        {% with message = get_flashed_messages() %}
+        {% if message %}
+         {% for msg in message %}
+            <h1> {{msg}} <h1>
+         {% endfor %}
+        {%  endif %}
+        {% endwith %}
+       
+    </body>
+</html>
